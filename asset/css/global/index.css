@@ -34,10 +34,16 @@ body{
     height: 100px;
     line-height: 50px;
 }
-.impress-not-supported #notSupported{
-    display: block!important;
+#notSupported{
+    display: block;
 }
-.impress-not-supported #root{
+.impress-supported #notSupported{
+    display: none!important;
+}
+.impress-supported #root{
+    filter: blue(0px)!important;
+}
+#root{
     filter: blue(15px);
 }
 /* steps styles */
